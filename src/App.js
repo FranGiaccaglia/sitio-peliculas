@@ -32,7 +32,7 @@ function App() {
     </main>
 
     <a href='/' className='boton__inicio--a'>▲</a>
-    <footer className='footer'></footer>
+    <footer className='footerrr'></footer>
   </div>
 }
 
