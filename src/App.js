@@ -17,6 +17,9 @@ function App() {
       <h1 className='header__titulo'>
         <a href='/'>Pelireviews</a>
       </h1>
+      <h2 className='header__login'>
+        <a href='/login'>Login</a>
+      </h2>
       <div className='theme__ico--div'>
         <img className='theme__ico' onClick={()=>{changeTheme()}} src={img1} alt=''></img>
       </div>

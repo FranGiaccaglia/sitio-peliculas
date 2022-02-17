@@ -32,8 +32,8 @@ export default function Login() {
             <p>{user.logged?"Bienvenido "+user.name:"Sin sesión"}</p>
 
             <form onSubmit={singIn}>
-                <input type="email"/>
-                <input type="password"/>
+                <input type="email" name="email" />
+                <input type="password" name="password" />
                 <button>Enviar</button>
             </form>
         </div>
