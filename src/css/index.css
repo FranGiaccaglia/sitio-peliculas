@@ -110,9 +110,9 @@ body{
 .boton__inicio--a{  
    text-decoration: none;
    position: fixed;
-   bottom: .5em;
-   right: .7em;
-   font-size: 2.5em;
+   bottom: 1em;
+   right: 1.7em;
+   font-size: 1.5em;
 }
 .boton__inicio--a:hover{
     filter:invert(1);
@@ -127,3 +127,66 @@ body{
     text-align: center;
     font-size: 3em;
 }
+
+.div--comentarios{
+    width: 80vw;
+    margin: 2em;
+    border-radius: 0px;
+    border: 0px;
+    background-color: rgb(206, 206, 206);
+    padding: 1em;
+    outline: 0px;
+}
+.div--comentarios:active{
+    background-color:  aliceblue;
+    transition-duration: .1s;
+}
+
+.div--comentarios__boton{
+    border-radius: 0px;
+    border: 0px;
+    padding: 1em;
+    margin-left: 1em;
+}
+.main__dark .div--comentarios__boton{
+    background-color: rgb(221, 0, 66);
+    color: white;
+}
+.main__dark .div--comentarios__boton:active{
+    background-color: rgb(255, 80, 133);
+    color: white;
+}
+.main__light .div--comentarios__boton{
+    background-color: rgb(0, 109, 160);
+    color: white;
+}
+.main__light .div--comentarios__boton:active{
+    background-color: rgb(129, 215, 255);
+    color: white;
+}
+
+.div--cajacomentarios{
+    margin: 2em;
+    padding: .1em;
+    border: 2px;
+}
+.div--cajacomentarios__texto{
+    margin: 1em 1em;
+    word-break: break-all;
+    border-style:dashed;
+    border-radius: 5px;
+    padding: 1em;
+}
+.main__dark .div--cajacomentarios__texto{
+    border-color: rgb(221, 0, 66);
+}
+.main__light .div--cajacomentarios__texto{
+    border-color:  rgb(0, 109, 160);
+}
+
+.movie--details{
+    margin: 2.5em;
+    max-width: 20em;
+    border-radius: 15px; 
+}
+

@@ -31,7 +31,7 @@ function App() {
           </BrowserRouter>
     </main>
 
-    <a href='/' className='boton__inicio--a'>▲</a>
+    <a href='/' className='boton__inicio--a'>inicio ꜛ</a>
     <footer className='footer'></footer>
   </div>
 }
