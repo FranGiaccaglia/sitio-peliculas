@@ -5,12 +5,12 @@ import Movie from '../components/Movie';
 
 export default function Details() {
   const {id} = useParams();
-  const  {movies, reviews, addReview} = useContext(moviesContext);
-  const movie = movies.filter(movie=>movie.id===id)[0];
+  const  {movies, reviews, addReview, loading} = useContext(moviesContext);
+  const movie = movies.filter(movie=>movie._id===id)[0];
   const comentario = useRef();
   const rating = useRef();
 
-  if(!movie){
+  if(!movie && !loading){ //se retrasa la ejecución de details, pregunta si !película y !cargando ir a notfound, si no, esperar
     return <Navigate to="/notfound"/>
   }
 
@@ -21,7 +21,7 @@ export default function Details() {
     comentario.current.value = "";
   }
 
-  return <div>
+  return loading?<p>Loading...</p>:<div>
     <div className='movie--details'>
       <Movie movie={movie}></Movie>
     </div>
@@ -42,12 +42,11 @@ export default function Details() {
     <div className='div--cajacomentarios'>
       {reviews.map(reviews=>{
         if(reviews.idMovie===id){
-            return <p className='div--cajacomentarios__texto'>{reviews.comment}</p>
+            return <p key={reviews.id} className='div--cajacomentarios__texto'>{reviews.comment}</p>
         }
         return undefined;
       })}
     </div>
-
   </div>
   
 }

@@ -5,6 +5,7 @@ import { themeContext } from './context/ThemeContext'
 import React, {useContext} from 'react'
 import img1 from './images/themeIco.png'
 import NotFound from './pages/NotFound';
+import Login from './pages/Login';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Routes>
               <Route path="*" element={<NotFound/>}/>
               <Route path="/" element={<Home/>}/>
+              <Route path="/login" element={<Login/>}/>
               <Route path="/details/:id" element={<Details/>}/>
             </Routes>
           </BrowserRouter>
