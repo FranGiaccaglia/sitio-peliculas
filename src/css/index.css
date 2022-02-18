@@ -71,11 +71,12 @@ body{
 
 
 .header{
-    padding: 1em;
+    padding: .5em;
     background-color: rgba(0, 0, 0, 0.383);
 }
 .theme__ico--div{
     text-align: right;
+    margin-top: 0px;
 }
 .theme__ico{
     height:2em;
@@ -98,7 +99,7 @@ body{
     text-align: center;
     font-size: 2.2em;
     position: absolute;
-    margin-top: .2em;
+    margin-top: .5em;
 }
 .header__titulo a{
     text-decoration: none;
@@ -129,7 +130,7 @@ body{
 }
 
 .div--comentarios{
-    width: 80vw;
+    width: 70vw;
     margin: 2em;
     border-radius: 0px;
     border: 0px;
@@ -146,7 +147,7 @@ body{
     border-radius: 0px;
     border: 0px;
     padding: 1em;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 .main__dark .div--comentarios__boton{
     background-color: rgb(221, 0, 66);
@@ -193,5 +194,47 @@ body{
     position: absolute;
     text-decoration: none;
     right: 3em;
+    margin-top: .2em;
+    font-size: 1em;
+}
+.header__login a:hover{
+    filter: brightness(.6);
+    transition-duration: .3s;
+}
+.page--div__contenedor{
+    margin: 7em 26em 26em 26em;
+    text-align: center;
+    background-color:rgb(158, 158, 158);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.842);
+
+}
+.page--bienvenida{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+.page--form{
+    margin: 2em;
+    text-align: center;
+}
+.page--form__fields{
+    border-radius: 0px;
+    border: 0px;
+    padding: .5em;
+    margin: .5em;  
+}
+.page--form__button{
+    border-radius: 0px;
+    border: 0px;
+    padding: .5em;
+    margin: .5em;  
+}
+.page--form__button:hover{
+    filter: brightness(.5);
+}
+.page--form__button:active{
+    filter: brightness(1.2);
 }
 

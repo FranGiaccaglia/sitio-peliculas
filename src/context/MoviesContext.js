@@ -18,16 +18,15 @@ export default function MoviesContext({children}) {
 
   //peticion a backend
   useEffect(()=>{
-    //fetch("https://backendtzuzulcode.wl.r.appspot.com/movies")
     fetch("https://backendtzuzulcode.wl.r.appspot.com/movies")
-        .then(res=>res.json())
-        .then(data=>{
-            console.log(data)
-            setMovies({type:"addMovies",movies:data})
-            setLoading(false)
+    .then(res=>res.json())
+    .then(data=>{
+        console.log(data)
+        setMovies({type:"addMovies",movies:data})
+        setLoading(false)
     })
-    .catch(error=>setLoading(false));
-  }, [])
+    .catch(error=>setLoading(false))
+},[])
 
   return <moviesContext.Provider value={{loading,movies:movies.movies,addReview,reviews:reviews.reviews}}> 
     {children}

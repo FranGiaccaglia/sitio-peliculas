@@ -10,5 +10,6 @@ export default function Movie({movie}) {
     <h2 className='movie__title'>{movie.title}</h2>
   </Link>
   <div className='movie__stars'>{isNaN(movie.rating/movie.numberOfReviews)?0:movie.rating/movie.numberOfReviews}</div>
+  <img className='movie__image' src={movie.img} alt={movie.title}></img>
 </article>
 }

@@ -10,7 +10,7 @@ export default function Details() {
   const comentario = useRef();
   const rating = useRef();
 
-  if(!movie && !loading){ //se retrasa la ejecución de details, pregunta si !película y !cargando ir a notfound, si no, esperar
+  if(!movie){ //se retrasa la ejecución de details, pregunta si !película y !cargando ir a notfound, si no, esperar
     return <Navigate to="/notfound"/>
   }
 
@@ -25,7 +25,7 @@ export default function Details() {
     <div className='movie--details'>
       <Movie movie={movie}></Movie>
     </div>
-    <p>Details {id}</p>
+    <p>Este párrafo describe la película</p>
 
     <div>
       <input className='div--comentarios' ref={comentario} type="text"></input>

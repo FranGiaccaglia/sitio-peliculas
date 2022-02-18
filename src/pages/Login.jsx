@@ -28,14 +28,16 @@ export default function Login() {
     }
     
     return <div className='page'>
+            <div className='page--div__contenedor'>
+                <p className='page--bienvenida'>{user.logged?"Bienvenido "+user.name:"Aún no has iniciado sesión"}</p>
 
-            <p>{user.logged?"Bienvenido "+user.name:"Sin sesión"}</p>
+                <form className='page--form' onSubmit={singIn}>
+                    <input className='page--form__fields' type="email" name="email" />
+                    <input className='page--form__fields' type="password" name="password" />
+                    <button className='page--form__button'>Enviar</button>
+                </form>
+            </div>
 
-            <form onSubmit={singIn}>
-                <input type="email" name="email" />
-                <input type="password" name="password" />
-                <button>Enviar</button>
-            </form>
         </div>
      
 }
