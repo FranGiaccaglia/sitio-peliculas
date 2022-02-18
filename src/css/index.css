@@ -7,6 +7,7 @@ body{
     margin: 0px;
 }
 .movies{
+    text-align: center;
     margin: 1em;
     display: grid;
     gap: 20px;
@@ -21,7 +22,7 @@ body{
     transition-duration: .2s;
 }
 .movie__image{
-    width: 100%;
+    width: 80%;
     height: 90%;
     object-fit: cover;
     border-radius: 15px;
@@ -68,7 +69,6 @@ body{
 .main__light a{
     color: rgb(0, 109, 160);
 }
-
 
 .header{
     padding: .5em;
@@ -236,5 +236,11 @@ body{
 }
 .page--form__button:active{
     filter: brightness(1.2);
+}
+.movie--details__p{
+    width: 40vw;
+    position: absolute;
+    right: 28em;
+    bottom: 5em;
 }
 
